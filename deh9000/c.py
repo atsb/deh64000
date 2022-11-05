@@ -1,6 +1,5 @@
 """Python types which emulate C types."""
 
-from __future__ import absolute_import
 from __future__ import print_function
 
 import copy
@@ -179,11 +178,6 @@ class Struct(object):
 		"""
 		# Assign from args list:
 		field_names = self.field_names()
-		if len(args) > len(field_names):
-			raise ValueError("%r only has %d fields" % (
-				type(self).__name__, len(field_names)))
-		for i, value in enumerate(args):
-			setattr(self, field_names[i], value)
 
 		# Override with kwargs:
 		for field, value in kwargs.items():

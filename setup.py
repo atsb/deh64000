@@ -3,12 +3,12 @@
 from distutils.core import setup
 
 setup(
-	name="DEH 9000",
+	name="DEH 64000",
 	version="0.1",
-	description="A Dehacked for Programmers",
-	author="Simon Howard",
-	author_email="fraggle@gmail.com",
-	url="https://github.com/fragglet/deh9000",
-	packages=["deh9000"],
+	description="A Dehacked64 for Programmers",
+	author="Gibbon",
+	author_email="",
+	url="https://github.com/atsb/deh64000",
+	packages=["deh64000"],
 )
 

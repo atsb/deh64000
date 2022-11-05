@@ -44,25 +44,17 @@ class StatesArray(c.StructArray):
 	# These states are hard-coded into the Doom source code - bits
 	# of code jump to these states.
 	HARDCODED_STATES = [
-		# p_enemy.c:A_VileChase
-		S_VILE_HEAL1,
-		# p_enemy.c:A_BrainScream/A_BrainExplode
-		S_BRAINEXPLODE1,
-		# p_map.c:PIT_ChangeSector (crushing bodies under doors)
-		S_GIBS,
-		# p_mobj.c:P_XYMovement; also p_pspr.c
+		# p_user.c, p_pspr.c, p_finale.c:P_XYMovement; also p_pspr.c
 		S_PLAY,
 		# p_mobj.c:P_SpawnPuff
 		S_PUFF3,
 		# p_mobj.c:P_SpawnBlood
 		S_BLOOD2,
 		S_BLOOD3,
-		# p_pspr.c:(various)
+		# p_user.c, p_pspr.c, p_finale.c:(various)
 		S_PLAY_ATK1,
 		S_PLAY_ATK2,
 		S_PLAY_RUN1,
-		# This state cannot be modified by dehacked (causes an overrun).
-		S_TECH2LAMP4,
 	]
 
 	def walk(self, index):

@@ -21,10 +21,9 @@ from __future__ import print_function
 import re
 import sys
 
-# A dehacked file must start with one of these lines:
+# A dehacked64 file must start with one of these lines:
 HEADER_LINES = [
-	"Patch File for DeHackEd v3.0",
-	"Patch File for DeHackEd v2.3",
+	"Patch File for DeHackEd64",
 ]
 
 # Lines which match this regexp are comment lines and will be stripped out of

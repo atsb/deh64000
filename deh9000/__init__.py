@@ -4,7 +4,6 @@ from deh9000.actions import *
 from deh9000.ammo import *
 from deh9000.misc import *
 from deh9000.mobjs import *
-from deh9000.sounds import *
 from deh9000.sprites import *
 from deh9000.states import *
 from deh9000.weapons import *
@@ -18,10 +17,8 @@ dehfile = DehackedFile()
 ammodata = dehfile.ammodata
 miscdata = dehfile.miscdata
 mobjinfo = dehfile.mobjinfo
-S_sfx = dehfile.S_sfx
 states = dehfile.states
 sprnames = dehfile.sprnames
-strings = dehfile.strings
 weaponinfo = dehfile.weaponinfo
 
 def sql():

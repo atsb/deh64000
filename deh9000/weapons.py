@@ -49,6 +49,7 @@ weapontype_t = c.Enum([
 	"wp_bfg",
 	"wp_chainsaw",
 	"wp_supershotgun",
+	"wp_laser",
 ])
 
 weapontype_t.create_globals(globals())
