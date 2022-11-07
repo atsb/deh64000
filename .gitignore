@@ -1,1 +1,11 @@
 *.pyc
+*.iml
+*.xml
+*.iml
+.idea/deh64000.iml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/modules.xml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/deh64000.iml
