@@ -198,6 +198,24 @@ macubus_attack = (
 	deh9000.S_FATT_ATK7,
 )
 
+zombieman_frames = (
+	deh9000.S_POSS1_STND, deh9000.S_POSS1_STND2,
+	deh9000.S_POSS1_RUN1, deh9000.S_POSS1_RUN2,
+	deh9000.S_POSS1_RUN3,	deh9000.S_POSS1_RUN4,
+	deh9000.S_POSS1_RUN5,	deh9000.S_POSS1_RUN6,
+	deh9000.S_POSS1_RUN7,	deh9000.S_POSS1_RUN8,
+	deh9000.S_POSS1_ATK1,	deh9000.S_POSS1_ATK2,
+	deh9000.S_POSS1_ATK3,	deh9000.S_POSS1_PAIN,
+	deh9000.S_POSS1_PAIN2,	deh9000.S_POSS1_DIE1,
+	deh9000.S_POSS1_DIE2,	deh9000.S_POSS1_DIE3,
+	deh9000.S_POSS1_DIE4, deh9000.S_POSS1_DIE5,
+	deh9000.S_POSS1_XDIE1, deh9000.S_POSS1_XDIE2,
+	deh9000.S_POSS1_XDIE3, deh9000.S_POSS1_XDIE4,
+	deh9000.S_POSS1_XDIE5, deh9000.S_POSS1_XDIE6,
+	deh9000.S_POSS1_XDIE7, deh9000.S_POSS1_XDIE8,
+	deh9000.S_POSS1_XDIE9,
+)
+
 zombieman_attack = (
 	deh9000.S_POSS1_ATK1, deh9000.S_POSS1_ATK2,
 	deh9000.S_POSS1_ATK3,
@@ -206,6 +224,11 @@ zombieman_attack = (
 sargeant_attack = (
 	deh9000.S_POSS2_ATK1, deh9000.S_POSS2_ATK2,
 	deh9000.S_POSS2_ATK3,
+)
+
+chaingunner_attack = (
+	deh9000.S_CPOS_ATK1, deh9000.S_CPOS_ATK2,
+	deh9000.S_CPOS_ATK3, deh9000.S_CPOS_ATK4,
 )
 
 imp_attack = (
@@ -259,127 +282,116 @@ saw_states = (
 	deh9000.S_SAW1, deh9000.S_SAW2, deh9000.S_SAW3,
 )
 
-# Make the pistol fire really quickly.
+# Make the PISTOL fire really quickly.
 for state_id in pistol_states:
 	a.states[state_id].tics = 1
 
 a.save("fastpistol.deh")
 
-# Make the pistol fire really quickly.
+# Make the SHOTGUN fire really quickly.
 for state_id in sgun_states:
 	b.states[state_id].tics = 1
 
 b.save("fastsgun.deh")
 
-# Make the pistol fire really quickly.
+# Make the SSG fire really quickly.
 for state_id in ssg_states:
 	c.states[state_id].tics = 1
 
 c.save("fastssg.deh")
 
-# Make the pistol fire really quickly.
+# Make the CHAINGUN fire really quickly.
 for state_id in chain_states:
 	d.states[state_id].tics = 1
 
 d.save("fastchain.deh")
 
-# Make the pistol fire really quickly.
+# Make the ROCKET fire really quickly.
 for state_id in rocket_states:
 	e.states[state_id].tics = 1
 
 e.save("fastrocket.deh")
 
-# Make the pistol fire really quickly.
+# Make the PLASMA fire really quickly.
 for state_id in plasma_states:
 	f.states[state_id].tics = 1
 
 f.save("fastplasma.deh")
 
-# Make the pistol fire really quickly.
+# Make the BFG fire really quickly.
 for state_id in bfg_states:
 	g.states[state_id].tics = 1
 
 g.save("fastbfg.deh")
 
-# Make the pistol fire really quickly.
+# Make the Laser fire really quickly.
 for state_id in laser_states:
 	h.states[state_id].tics = 1
 
 h.save("fastlaser.deh")
 
-# Make the pistol fire really quickly.
+# Make the Fist fire really quickly.
 for state_id in punch_states:
 	h.states[state_id].tics = 1
 
 h.save("fastpunch.deh")
 
-# Make the pistol fire really quickly.
+# Make the Saw fire really quickly.
 for state_id in saw_states:
 	h.states[state_id].tics = 1
 
 h.save("fastsaw.deh")
 
-# Make the pistol fire really quickly.
 for state_id in macubus_attack:
 	h.states[state_id].tics = 1
 
 h.save("fastmancattack.deh")
 
-# Make the pistol fire really quickly.
-for state_id in zombieman_attack:
-	h.states[state_id].tics = 1
+for state_id in zombieman_frames:
+	h.states[state_id].sprite = 1
 
 h.save("fastzombieattack.deh")
 
-# Make the pistol fire really quickly.
 for state_id in sargeant_attack:
 	h.states[state_id].tics = 1
 
-h.save("fastsargeantattack.deh")
+h.save("fastsargattack.deh")
 
-# Make the pistol fire really quickly.
 for state_id in imp_attack:
 	h.states[state_id].tics = 1
 
 h.save("fastimpattack.deh")
 
-# Make the pistol fire really quickly.
 for state_id in cacodemon_attack:
 	h.states[state_id].tics = 1
 
 h.save("fastcacoattack.deh")
 
-# Make the pistol fire really quickly.
 for state_id in baronofhell_attack:
 	h.states[state_id].tics = 1
 
 h.save("fastbaronattack.deh")
 
-# Make the pistol fire really quickly.
 for state_id in hellknight_attack:
 	h.states[state_id].tics = 1
 
 h.save("fastknightattack.deh")
 
-# Make the pistol fire really quickly.
 for state_id in lostsoul_attack:
 	h.states[state_id].tics = 1
 
 h.save("fastsoulattack.deh")
 
-# Make the pistol fire really quickly.
 for state_id in arachnotron_attack:
 	h.states[state_id].tics = 1
 
 h.save("fastarachnotronattack.deh")
 
-# Make the pistol fire really quickly.
 for state_id in cyberdemon_attack:
 	h.states[state_id].tics = 1
 
 h.save("fastcyberdemonattack.deh")
 
-# Make the pistol fire really quickly.
 for state_id in resurrector_attack:
 	h.states[state_id].tics = 1
 
