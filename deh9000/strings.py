@@ -34,5 +34,7 @@ sprnames = [
     "ARCR",
     "POW1",
     "SPID",
+    "VFIR",
+    "VILE",
     "TEST",
 ]

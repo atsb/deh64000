@@ -177,6 +177,8 @@ spritenum_t = c.Enum([
 	"SPR_ARCR",
 	"SPR_POW1",
 	"SPR_SPID",
+	"SPR_VFIR",
+	"SPR_VILE",
 	"SPR_TEST",
 ])
 

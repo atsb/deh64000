@@ -116,6 +116,13 @@ sfxenum_t = c.Enum([
     "sfx_skeldth",
     "sfx_spisit",
     "sfx_spidth",
+    "sfx_flamst",
+    "sfx_flame",
+    "sfx_vilsit",
+    "sfx_vilpain",
+    "sfx_vildth",
+    "sfx_vilact",
+    "sfx_vilatk",
 ])
 
 sfxenum_t.create_globals(globals())
