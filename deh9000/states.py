@@ -1153,6 +1153,14 @@ statenum_t = c.Enum([
     "S_TEST_RAISE4",
     "S_TEST_RAISE5",
     "S_TEST_RAISE6",
+    "S_BLOOD96",
+	"S_BLOOD97",
+	"S_BLOOD98",
+	"S_BLOOD99",
+	"S_BLOOD106",
+	"S_BLOOD107",
+	"S_BLOOD108",
+	"S_BLOOD109",
 ])
 
 statenum_t.create_globals(globals())
